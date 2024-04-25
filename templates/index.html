@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#374956;height: 100vh">
+<head>
+    <meta charset="UTF-8">
+    <title>predicted</title>
+</head>
+<body >
+<script type="text/javascript" src="../static/js/actions.js"></script>
+<script type="text/javascript" src="../static/js/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" href="../static/css/pico.min.css ">
+<article style="margin: 50px;">
+    <H1 style="margin: 10px">
+        <font color="#FF2800">A</font><font color="#FF5000">i</font><font color="#FF7800">r</font> <font
+            color="#FFA000">q</font><font color="#FFC800">u</font><font color="#FFF000">a</font><font
+            color="#D7FF00">l</font><font color="#AFFF00">i</font><font color="#87FF00">t</font><font
+            color="#5FFF00">y</font> <font color="#37FF00">p</font><font color="#0FFF00">r</font><font
+            color="#00FF28">e</font><font color="#00FF50">d</font><font color="#00FF78">i</font><font
+            color="#00FFA0">c</font><font color="#00FFC8">t</font><font color="#00FFF0">i</font><font
+            color="#00D7FF">o</font><font color="#00AFFF">n</font> <font color="#0087FF">p</font><font
+            color="#005FFF">r</font><font color="#0037FF">o</font><font color="#000FFF">c</font><font
+            color="#2800FF">e</font><font color="#5000FF">s</font><font color="#7800FF">s</font>
+    </H1>
+    <details>
+        <summary role="button"> Clean data</summary>
+        <div class="grid">
+            <p id="show_result_text1" style="margin: 10px"></p>
+            <a href="#" role="button" class="outline" onclick="clean_data()">run</a>
+        </div>
+    </details>
+
+    <details>
+        <summary role="button">Show EDA Chart</summary>
+        <div class="grid" style="margin: 10px">
+            <img src="" id="chartImg1" alt=""/>
+            <img src="" id="chartImg2" alt=""/>
+            <img src="" id="chartImg3" alt=""/>
+            <a href="#" role="button" class="outline" onclick="show_EDA_Chart()">run</a>
+        </div>
+
+    </details>
+
+    <details>
+        <summary role="button">Training model</summary>
+        <div class="grid">
+            <div id="show_result_text2"></div>
+            <a href="#" role="button" class="outline" onclick="train_data()">run</a>
+        </div>
+    </details>
+
+    <details>
+        <summary role="button">Input forecasts</summary>
+        <div class="grid">
+            <label for="temperature">
+                temperature
+                <input type="text" id="temperature" name="temperature" placeholder="temperature" required>
+            </label>
+            <label for="humidity">
+                humidity
+                <input type="text" id="humidity" name="humidity" placeholder="humidity" required>
+            </label>
+            <label for="wind_speed">
+                wind speed
+                <input type="text" id="wind_speed" name="wind_speed" placeholder="wind speed"
+                       required>
+            </label>
+            <label for="noise_level">
+                noise level
+                <input type="text" id="noise_level" name="noise_level" placeholder="noise level"
+                       required>
+            </label>
+            <label for="precipitation">
+                precipitation
+                <input type="text" id="precipitation" name="precipitation" placeholder="precipitation"
+                       required>
+            </label>
+            <label for="solar_radiation">
+                solar radiation
+                <input type="text" id="solar_radiation" name="solar_radiation" placeholder="solar radiation"
+                       required>
+            </label>
+
+        </div>
+        <div class="grid">
+            <div id="show_result_text3"></div>
+            <a href="#" role="button" class="outline" onclick="forecasts()">run</a>
+        </div>
+
+    </details>
+</article>
+</body>
+<style>
+
+</style>
+</html>
